@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Leave Tracker Web App</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/calendar.css">
+</head>
+
+<body>
+    <header>
+        <h1>Leave Tracker Dashboard</h1>
+    </header>
+
+    <main>
+        <!-- Top row: Employees, Leave Form, Holidays -->
+        <div class="top-sections">
+            <section class="employee-list">
+                <h2>Employees</h2>
+
+                <ul id="employeeList">
+
+                </ul>
+                
+                <div class="add-employee">
+                    <input type="text" id="newEmployee" placeholder="Add employee name">
+                    <button type="button" id="addEmployeeBtn">Add</button>
+                </div>
+                
+                    
+            </section>
+
+            <section class="leave-form">
+                <h2>Apply for Leave</h2>
+                <form id="leaveForm">
+                    <label for="employee">Employee:</label>
+                    <select id="employee" name="employee">
+                        <option>William</option>
+                        <option>Sophia</option>
+                        <option>James</option>
+                        <option>Olivia</option>
+                        <option>Michael</option>
+                        <option>Emma</option>
+                        <option>Robert</option>
+                    </select><br>
+
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date"><br>
+
+                    <label for="type">Leave Type:</label>
+                    <select id="type" name="type">
+                        <option value="S">Sick</option>
+                        <option value="V">Vacation</option>
+                        <option value="M">Maternity</option>
+                        <option value="O">Other</option>
+                    </select><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+            </section>
+
+            <section class="holiday-calendar">
+                <h2>Holiday Calendar</h2>
+                <ul>
+                    <li>01-Jan: New Year Day</li>
+                    <li>15-Jan: Martin Luther King Jr. Day</li>
+                    <li>19-Feb: Presidents' Day</li>
+                    <li>30-Mar: Good Friday</li>
+                    <li>28-May: Memorial Day</li>
+                    <li>04-Jul: Independence Day</li>
+                    <li>03-Sep: Labor Day</li>
+                    <li>22-Nov: Thanksgiving Day</li>
+                </ul>
+            </section>
+        </div>
+
+        <!-- Bottom: Monthly Calendar -->
+        <section class="calendar-section">
+            <h2>Monthly Calendar</h2>
+            <div class="calendar-container">
+                <div class="calendar-header">
+                    <button id="prevMonth">&lt;</button>
+                    <h2 id="monthYear"></h2>
+                    <button id="nextMonth">&gt;</button>
+                </div>
+                <table class="calendar">
+                    <thead>
+                        <tr>
+
+                            <th>Mon</th>
+                            <th>Tue</th>
+                            <th>Wed</th>
+                            <th>Thu</th>
+                            <th>Fri</th>
+                            <th>Sat</th>
+                            <th>Sun</th>
+
+                        </tr>
+                    </thead>
+                    <tbody id="calendarBody"></tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="static/js/script.js"></script>
+    <script src="static/js/calendar.js"></script>
+</body>
+
+</html>

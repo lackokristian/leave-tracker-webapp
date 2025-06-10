@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+header {
+    background: #0077cc;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2em;
+    padding: 2em;
+}
+
+section {
+    background: white;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+h2 {
+    color: #0077cc;
+}
+
+form label {
+    display: block;
+    margin-top: 0.5em;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.2em;
+}
+
+button {
+    margin-top: 1em;
+    padding: 0.5em 1em;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.top-sections {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top-sections section {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.calendar-section {
+    width: 100%;
+    max-width: 1000px;
+    margin: 3em auto 0;
+}
+
+.add-employee {
+    margin-top: 1em;
+    display: flex;
+    gap: 0.5em;
+}
+
+.add-employee input {
+    flex: 1;
+    padding: 0.5em;
+}
+
+.add-employee button {
+    padding: 0.5em 1em;
+}
+
+
+.delete-btn {
+    margin-left: 0.5em;
+    background: rgb(50, 94, 190);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    cursor: pointer;
+}

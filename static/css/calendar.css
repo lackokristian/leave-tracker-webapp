@@ -1,0 +1,29 @@
+.calendar-section {
+    width: 100%;
+    display: flex;
+    margin-top: 3em;
+    
+    
+}
+
+.calendar-container {
+    width: 80%;
+    max-width: 1000px;
+    background: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.calendar th, .calendar td {
+    width: 14.28%;
+    height: 50px;
+    font-size: 1.2em;
+    text-align: center;
+    vertical-align: top;
+    border: 1px solid #ddd;
+}
+
+.calendar-header h2 {
+    font-size: 1.5em;
+}
