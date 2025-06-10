@@ -1,4 +1,4 @@
-const API_URL = 'http://localhost:5000/employees'; // Change this if deployed
+const API_URL = 'http://localhost:5000/employees'; // Update if deployed
 
 async function fetchEmployees() {
   const res = await fetch(API_URL);
@@ -26,7 +26,9 @@ function renderEmployees(employees) {
   list.innerHTML = '';
   dropdown.innerHTML = '';
 
-  employees.forEach(name => {
+  employees.forEach(emp => {
+    const name = emp.name; // Extract the name from the object
+
     const li = document.createElement('li');
     li.textContent = name;
 
